@@ -1,0 +1,22 @@
+
+
+
+It is a big challenge for high education institutes to achieve well balanced finanacial status
+while maximizing students success. 
+
+For this project, I plan to analyze the publicly available data from Integrated Postsecondary Education Data System (IPEDS). The data collected academic years from 1987 to 2012 and derived from the institutional characteristics, finance, enrollment, completions, graduation rates, student financial aid, and human resources IPEDS survey components and a limited number of outside sources.  
+
+By analysing the data, I plan to answer the following questions:
+
+Minor questions:
+1. The trend of completition rate over the time period from 1987 through 2012
+2. The trend of total financial aid per student over the time period from 1987 through 2012
+3. The fraction of fragship institutions and what is the difference of completition rate between 
+flagship institutions and non-flagship institutions
+4. Which institutes have the best balanced finance with maximizing students' success.?
+
+Major questions:
+1. What types of financial aid are most effective in maximizing completion rates?
+2. What types of financial aid are most effective in minimizing student loan burdens?
+3. What types of financial aid are most effective in maintaining well-funded schools?
+4. Establish a model to predict which institution will have better balanced financial
