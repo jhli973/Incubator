@@ -1,0 +1,32 @@
+---
+title: ''
+output: html_document
+---
+
+# Load Packages
+```{r}
+library(ggplot2)
+library(reshape2)
+```
+
+# Load data
+```{r}
+data = read.csv("majorcountries_health_expenditure.csv", head=TRUE)
+head(data)
+```
+
+```{r fig.width=12, fig.height=5, echo=FALSE}
+meltdf <- melt(data, id="Year", variable.name="Country.Name", value.name = "Health.Expenditure")
+g <- ggplot(meltdf,aes(x=Year,y=Health.Expenditure,colour=Country.Name)) + geom_line(size=1.5)
+g + xlab("Year") + ylab("Expenditure (% of GDP)") + geom_point(shape=19, size=3) + 
+ggtitle("Comparision of Health Expenditure Among Major Countries") + 
+theme(plot.title = element_text(hjust = 0.5, size=16),legend.text = element_text(size=14),
+      axis.title=element_text(size=14,face="bold"),
+      axis.text = element_text(size=14),
+      axis.line = element_line(color="black", size = 1.3)) +
+scale_y_continuous(breaks=seq(3,18,3)) +
+scale_x_continuous(breaks=seq(1995,2015,2))
+
+ ggsave("majorcountires_ggplot2.png")
+```
+
